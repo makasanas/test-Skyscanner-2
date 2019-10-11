@@ -1,0 +1,37 @@
+@import './assets/scss/base.scss';
+
+// fonts
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('assets/fonts/Segoe UI.woff');
+}
+
+@font-face {
+  font-family: 'Microsoft Himalaya';
+  src: url('assets/fonts/Himalaya.ttf');
+}
+
+@font-face {
+  font-family: 'Lucida Bright';
+  src: url('assets/fonts/LBrite.ttf');
+}
+
+* {
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Segoe UI;
+  overflow-x: hidden;
+}
+
+div {
+  // border: 1px solid #ddd;
+}

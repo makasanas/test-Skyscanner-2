@@ -1,0 +1,20 @@
+.footer {
+  padding-top: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #000;
+    max-width: 90%;
+  }
+
+  .footer-content {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

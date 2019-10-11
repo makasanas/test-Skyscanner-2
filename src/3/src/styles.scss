@@ -1,0 +1,33 @@
+@import "reset";
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+
+html {
+  font-family: sans-serif;
+  max-width: 1920px;
+  font-size: 14px;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background: #858585;
+  overflow-y: hidden;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+
+  .container {
+    max-width: 80%;
+    margin: auto;
+    height: 100%;
+    // height: calc(100% - 90px);
+  }
+}
+@function image($asset-path, $file-name){
+  @return url($asset-path + '/' + $file-name)
+}
