@@ -55,7 +55,7 @@
 
     h1 {
       margin: 0;
-      font-family: Lucida Bright;
+      
       font-size: 120px;
 
       @include screen-lg {
@@ -67,7 +67,7 @@
       }
     }
     p {
-      font-family: Segoe UI;
+      
       font-weight: 300;
       font-size: 40px;
       margin: 0;
@@ -126,7 +126,7 @@
             border-radius: 10px;
             border: none;
             color: white;
-            font-family: Segoe UI;
+            
             font-weight: bold;
             font-size: 20px;
             cursor: pointer;
@@ -297,7 +297,7 @@
                     border-radius: 3px;
                     border: 1px solid #ffffff;
                     color: white;
-                    font-family: Segoe UI;
+                    
                     font-weight: bold;
                     font-size: 15px;
                     cursor: pointer;
@@ -376,7 +376,7 @@
             }
 
             input {
-              font-family: Segoe UI;
+              
               font-weight: bold;
               font-size: 20px;
               border: none;

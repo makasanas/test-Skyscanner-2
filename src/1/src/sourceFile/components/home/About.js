@@ -1,9 +1,17 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 import "./about.css";
 
 export default class About extends Component {
+
+  componentWillMount(){
+    AOS.init();
+  }
+
   render() {
     return (
       <div className="aboutUs">

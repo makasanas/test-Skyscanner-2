@@ -152,7 +152,7 @@ class Products extends React.Component {
     return (
       <Slider>
         {destinations.map((item, i) => (
-          <Link to="/products/1" className="slide" key={i}>
+          <Link to="/courses/1" className="slide" key={i}>
             <DestinationCard item={item} small />
           </Link>
         ))}

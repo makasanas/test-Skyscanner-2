@@ -33,10 +33,16 @@ export default class Header extends Component {
               <Link to="/about">ABOUT</Link>
             </li>
             <li id="about">
-              <Link to="/products">COURSES</Link>
+              <Link >PRODUCTS</Link>
               <ul className="dropdown" id="dropdown">
                 <li>
-                  <Link to="/forum">FORUM</Link>
+                  <Link to="/forum">Forum</Link>
+                </li>
+                <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+                <li>
+                  <Link to="/courses">Courses</Link>
                 </li>
               </ul>
             </li>

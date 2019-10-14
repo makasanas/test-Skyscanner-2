@@ -25,6 +25,7 @@
     background-color: rgba(255, 255, 255, 0.7);
     transition: 0.4s;
     position: absolute;
+    box-sizing: content-box;
   }
 
   >.search-icon {

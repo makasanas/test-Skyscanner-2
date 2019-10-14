@@ -10,7 +10,7 @@
   left: 10px;
   padding: 10px;
   transition: 0.4s ease-in-out;
-
+  box-sizing: content-box;
   &:hover {
     transform: scale(1.2);
     cursor: pointer;

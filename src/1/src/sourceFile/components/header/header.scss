@@ -5,6 +5,7 @@
     z-index: 5;
     position: absolute;
     width: 100%;
+    top:0px;
   }
   .navigation {
     display: grid;
@@ -207,7 +208,6 @@
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     background-color: #262626;
-    padding: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -215,6 +215,13 @@
     flex-wrap: wrap;
   }
   #dropdown li:hover {
+    background: #000;
+  }
+  #dropdown li a{
+    padding: 10px;
+    background-color: #262626;
+  }
+  #dropdown li a:hover {
     background: #000;
   }
   #dropdown {

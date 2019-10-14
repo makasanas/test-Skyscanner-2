@@ -97,7 +97,7 @@
           h2 {
             margin: 0;
             font-size: 20px;
-            font-family: Lucida Bright;
+            
             color: #9acd32;
 
             @include screen-md {
@@ -131,7 +131,7 @@
               span {
                 margin-left: 5px;
                 color: #808080;
-                font-family: Segoe UI;
+                
                 font-size: 13px;
 
                 @include screen-md {

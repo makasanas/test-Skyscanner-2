@@ -3,7 +3,6 @@ import './Footer.scss';
 
 const Footer = () => (
   <div className="footer">
-    <hr></hr>
     <div className="footer-content">
       <p>Copyright 2019 TravelSafe. All rights reserved by TravelSafe</p>
     </div>

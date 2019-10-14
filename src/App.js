@@ -18,7 +18,9 @@ import Products from './3/src/views/Products/Products';
 import ProductDetails from './3/src/views/Products/ProductDetails';
 import Cart from './3/src/views/Cart/Cart';
 import Forum from './2/src/pages/Forum';
+import Blog from './2/src/pages/Blog';
 
+    
 const App = () => (
   <Router>
     <div className="App">   
@@ -27,10 +29,11 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/login" component={Login} /> 
-        <Route exact path="/products" component={Products} /> 
-        <Route exact path="/products/:productId" component={ProductDetails} /> 
+        <Route exact path="/courses" component={Products} /> 
+        <Route exact path="/courses/:courseId" component={ProductDetails} /> 
         <Route exact path="/cart" component={Cart} /> 
         <Route exact path="/forum" component={Forum} /> 
+        <Route exact path="/blog" component={Blog} /> 
       </Switch>
       <Footer />
     </div>
