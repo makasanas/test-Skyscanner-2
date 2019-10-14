@@ -14,14 +14,17 @@ class SendMessage extends Component {
     }
   }
 
-  render() {
-    const { post, showModal, onClose } = this.state;
 
+  render() {
+    const { post, openModal, showModal } = this.state;
+    const { onClose } = this.props;
+    console.log()
     return (
       <ReactModal
         isOpen={showModal}
         className="message-modal"
         overlayClassName="message-overlay"
+        onRequestClose={onClose}
       >
         <div className="modal-header">
           <div className="left-pane">

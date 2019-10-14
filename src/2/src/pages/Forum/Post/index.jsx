@@ -20,9 +20,24 @@ class Post extends Component {
     }
   }
 
-  handleModalShow = () => this.setState({ openModal: true });
+  handleModalShow = () => {
+    if(!this.state.openModal){
+      this.setState({ openModal: true })
+    }
+};
 
-  handleModalClose = () => this.setState({ openModal: false });
+  handleModalClose = () => { 
+    this.setState({ openModal: false })
+    //  event.preventDefault();
+    // this.setState(({ openModal, post, liked }) => {
+    //   console.log(openModal);
+    //   return {
+    //     post:post,
+    //     liked:true, 
+    //     openModal: false
+    //   };
+    // });
+  }; 
 
   handlePostLike = () =>
     this.setState(({ post, liked }) => {
@@ -64,6 +79,7 @@ class Post extends Component {
 
   render() {
     const { post, liked, openModal } = this.state;
+    console.log(this.state);
 
     const isBackPacker = post.category === 'backpacker';
 
@@ -98,7 +114,7 @@ class Post extends Component {
           <SendMessage
             showModal={openModal}
             post={post}
-            onClose={this.handleModalClose}
+            onClose={this.handleModalShow}
           />
         ) : (
           <AddComment

@@ -96,7 +96,7 @@ class Products extends React.Component {
                       </div>
                       <span className="search-counter">{`${searchedDestinations.length} results for your search "${searchText}"`}</span>
                       {searchedDestinations.map((item, i) => (i === 3 ? <div className="highlighted-search">This is for recommended area</div> : (
-                        <Link className="slide" to="/products/1" key={i}>
+                        <Link className="slide" to={'/courses/'+i} key={i}>
                           <SearchCard item={item} />
                         </Link>
                       )))}

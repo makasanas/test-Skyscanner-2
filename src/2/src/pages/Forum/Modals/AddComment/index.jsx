@@ -198,6 +198,7 @@ class AddComment extends Component {
         isOpen={showModal}
         className="comment-modal"
         overlayClassName="comment-overlay"
+        onRequestClose={onClose}
       >
         <div className="modal-header">
           <div className="left-pane">
