@@ -73,7 +73,7 @@ export default class Header extends Component {
                 <Link to="/">HOME</Link>
               </li>
               <li>
-                <a href="#">CONTACT</a>
+                <a href="/#getInTouch">CONTACT</a>
               </li>
               <li>
                 <Link to="/about">ABOUT</Link>
@@ -81,10 +81,15 @@ export default class Header extends Component {
               <li id="products">
                 PROUDCTS
               <ul id="dropdown2">
-                  <li>Menu 1</li>
-                  <li>Menu 1</li>
-                  <li>Menu 1</li>
-                  <li>Menu 1</li>
+                  <li>
+                    <Link to="/forum">Forum</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog">Blog</Link>
+                  </li>
+                  <li>
+                    <Link to="/courses">Courses</Link>
+                  </li>
                 </ul>
               </li>
               <li>

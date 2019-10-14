@@ -24,6 +24,7 @@ class ProductDetails extends React.Component {
       cartHasItems: false,
       isVideoOpen: false,
       shake: false,
+      product: {}
     };
 
     this.scrollToTopRef = React.createRef();
@@ -33,7 +34,12 @@ class ProductDetails extends React.Component {
   }
 
   componentDidMount() {
-    this.props.getData();
+    this.props.getData().then((res)=>{
+      console.log(res.value);
+      this.setState({
+        product: res.value.destination[this.props.match.params.courseId]
+      })
+    });
     // https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/guides/scroll-restoration.md
     // fix with this
     window.scrollTo(0, 0);
@@ -54,7 +60,11 @@ class ProductDetails extends React.Component {
   }
 
   render() {
-    const product = get(this.props.data, 'product', {});
+    console.log(this.props.match.params.courseId);
+    let product = get(this.props.data, 'product', {});
+
+    product = {...product, ...this.state.product }
+
     const backgroundPath = images[product.image];
     const playButtonPath = images.playicon;
     const { shake, isVideoOpen, cartHasItems } = this.state;

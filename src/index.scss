@@ -389,8 +389,7 @@ template {
 :root{
   --heading: "Rubik", sans-serif;
   --paragraph: "Karla", sans-serif;
-  overflow-x: hidden;
-  
+  // overflow-x: hidden;
 }
 span,input, select,textarea {
   font-family: "Karla", sans-serif;

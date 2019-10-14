@@ -102,6 +102,7 @@ class MakePost extends Component {
         isOpen={showModal}
         className="post-modal"
         overlayClassName="post-overlay"
+        onRequestClose={onClose}
       >
         <div className="modal-header">
           <h2>Make a Post</h2>

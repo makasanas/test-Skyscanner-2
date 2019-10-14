@@ -11,12 +11,12 @@ const fakedatabase = {
     {
       trendingName: 'Exotic Mountains and m..',
       exoticName: 'Exotic travel che..',
-      price: '9.99$',
+      price: '10.99$',
       photo: 'lecture_card',
-      rating: '5.5 Rating',
-      time: '20H 20Min',
-      p1Title: 'You will explore',
-      p1Description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      rating: '50.5 Rating',
+      time: '24H 20Min',
+      p1Title: 'courses 0 You will explores',
+      p1Description: 'courses 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     },
     {
       trendingName: 'Exotic Mountains and m..',

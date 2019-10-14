@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { get, filter } from 'lodash';
+import { Link } from "react-router-dom";
 
 import CartCard from '../../components/Cards/CartCard';
 import Input from '../../components/Input';
@@ -34,11 +35,15 @@ class Cart extends React.Component {
 
   handleDeleteItem(context, id) {
     return function () {
-      console.log(this)
       const newProducts = filter(context.state.products, (item) => item.id !== id);
+      if(newProducts.length === 0){
+        context.props.history.push('/courses')
+      }
+      
       context.setState({
         products: newProducts
       })
+
     };
   }
 
@@ -76,9 +81,11 @@ class Cart extends React.Component {
           <div className="purchase-container">
             <div className="buttons-container">
               <div className="cancel-button">
-                <button className="cart-button" type="button">
-                  <span>Cancel</span>
-                </button>
+                <Link to="/courses">
+                  <button className="cart-button" type="button">
+                    <span>Cancel</span>
+                  </button>
+                </Link>
               </div>
               <div className="purchase-button">
                 <button className="cart-button" type="submit">

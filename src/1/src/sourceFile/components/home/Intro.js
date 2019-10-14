@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Intro extends Component {
   render() {
@@ -67,9 +68,11 @@ export default class Intro extends Component {
               direction.
             </h1>
             <div className="action-button">
-              <button>
-                <span>About us -></span>
-              </button>
+              <Link to="/about">
+                <button>
+                  <span>About us -></span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
