@@ -21,23 +21,14 @@ class Post extends Component {
   }
 
   handleModalShow = () => {
-    if(!this.state.openModal){
+    if (!this.state.openModal) {
       this.setState({ openModal: true })
-    }
-};
+    } 
+  };
 
-  handleModalClose = () => { 
+  handleModalClose = () => {
     this.setState({ openModal: false })
-    //  event.preventDefault();
-    // this.setState(({ openModal, post, liked }) => {
-    //   console.log(openModal);
-    //   return {
-    //     post:post,
-    //     liked:true, 
-    //     openModal: false
-    //   };
-    // });
-  }; 
+  };
 
   handlePostLike = () =>
     this.setState(({ post, liked }) => {
@@ -114,18 +105,18 @@ class Post extends Component {
           <SendMessage
             showModal={openModal}
             post={post}
-            onClose={this.handleModalShow}
-          />
-        ) : (
-          <AddComment
-            showModal={openModal}
-            post={post}
-            liked={liked}
-            onComment={this.handleCommentAdd}
-            onLike={this.handlePostLike}
             onClose={this.handleModalClose}
           />
-        )}
+        ) : (
+            <AddComment
+              showModal={openModal}
+              post={post}
+              liked={liked}
+              onComment={this.handleCommentAdd}
+              onLike={this.handlePostLike}
+              onClose={this.handleModalClose}
+            />
+          )}
       </div>
     );
   }
