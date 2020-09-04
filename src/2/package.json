@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "clsx": "^1.0.4",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "react": "15.6.1",
     "react-dom": "15.6.1",
     "react-input-autosize": "^2.2.1",
